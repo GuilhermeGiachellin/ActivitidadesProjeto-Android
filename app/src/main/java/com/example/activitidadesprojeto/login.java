@@ -26,14 +26,15 @@ public class login extends AppCompatActivity {
         String senhaCadastrada = "123456";
 
         if(emailString.isEmpty() || senhaString.isEmpty()) {
-            Intent telaFalhaLogin = new Intent(this, falhaLogin.class);
+            Intent telaFalhaLogin = new Intent(this, loginErro.class);
             startActivity(telaFalhaLogin);
 
         } else if (emailString == emailCadastrado && senhaString == senhaCadastrada) {
-            Intent telaSucessoLogin = new Intent(this, sucessoLogin.class);
+            Intent telaSucessoLogin = new Intent(this, loginSucesso.class);
             startActivity(telaSucessoLogin);
 
         } else {
+            Intent telaFalhaLogin = new Intent(this, loginErro.class);
             startActivity(telaFalhaLogin);
         }
     }
