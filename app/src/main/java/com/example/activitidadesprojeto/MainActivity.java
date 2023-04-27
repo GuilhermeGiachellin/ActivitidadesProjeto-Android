@@ -19,4 +19,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(telaLogin);
     }
 
+    public void botaoCadastroOnClick (View v) {
+        Intent telaCadastro = new Intent(this, cadastro.class);
+        startActivity(telaCadastro);
+    }
+
+    public void botaoSobreOnClick (View v) {
+        Intent telaSobre = new Intent(this, sobre.class);
+        startActivity(telaSobre);
+    }
 }
