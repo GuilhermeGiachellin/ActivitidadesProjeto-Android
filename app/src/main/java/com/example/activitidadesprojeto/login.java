@@ -15,7 +15,7 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
-    public void botaoLogin (View v) {
+    public void loginOnClick (View v) {
         EditText loginEmail = (EditText) findViewById(R.id.loginEmail);
         EditText loginSenha = (EditText) findViewById(R.id.loginSenha);
 
@@ -26,10 +26,9 @@ public class login extends AppCompatActivity {
         String senhaCadastrada = "123456";
 
         if(emailString.isEmpty() || senhaString.isEmpty()) {
-            Intent telaFalhaLogin = new Intent(this, loginErro.class);
-            startActivity(telaFalhaLogin);
+            startActivity(new Intent(this, loginErro.class));
 
-        } else if (emailString == emailCadastrado && senhaString == senhaCadastrada) {
+        } else if (emailString.equals(emailCadastrado) && senhaString.equals(senhaCadastrada)) {
             Intent telaSucessoLogin = new Intent(this, loginSucesso.class);
             startActivity(telaSucessoLogin);
 

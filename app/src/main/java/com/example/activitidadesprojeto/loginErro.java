@@ -14,8 +14,7 @@ public class loginErro extends AppCompatActivity {
         setContentView(R.layout.activity_login_erro);
     }
 
-    public void botaoVoltarOnClick (View v) {
-        Intent telaLogin = new Intent(this, login.class);
-        startActivity(telaLogin);
+    public void voltarOnClick (View v) {
+        startActivity(new Intent(this, login.class));
     }
 }

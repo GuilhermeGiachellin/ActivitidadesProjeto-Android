@@ -14,10 +14,8 @@ public class loginSucesso extends AppCompatActivity {
         setContentView(R.layout.activity_login_sucesso);
     }
 
-    public void botaoSobreOnClick (View v) {
-        Intent telaSobre = new Intent(this, sobre.class);
-        startActivity(telaSobre);
-
+    public void sobreOnClick (View v) {        
+        startActivity(new Intent(this, sobre.class));
     }
 
 }
