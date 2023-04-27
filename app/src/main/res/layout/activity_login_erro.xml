@@ -10,24 +10,30 @@
         android:id="@+id/votarButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Voltar"
         android:onClick="botaoVoltarOnClick"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="341dp" />
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
         android:text="Erro no Login."
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="166dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="213dp"
         android:text=" Verifique seus dados e tente novamente."
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="213dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

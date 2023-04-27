@@ -6,4 +6,106 @@
     android:layout_height="match_parent"
     tools:context=".cadastro">
 
+    <EditText
+        android:id="@+id/cadastroEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/cadastroButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroComplemento" />
+
+    <EditText
+        android:id="@+id/cadastroCep"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Cep"
+        app:layout_constraintBottom_toTopOf="@+id/cadastroEndereco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroNome" />
+
+    <EditText
+        android:id="@+id/cadastroNome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nome compleato"
+        app:layout_constraintBottom_toTopOf="@+id/cadastroCep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cadastroEndereco"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="54dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Endereço"
+        app:layout_constraintBottom_toTopOf="@+id/cadastroNumero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroCep" />
+
+    <EditText
+        android:id="@+id/cadastroComplemento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="70dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Complemento"
+        app:layout_constraintBottom_toTopOf="@+id/cadastroEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroNumero" />
+
+    <EditText
+        android:id="@+id/cadastroNumero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="54dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Numero"
+        app:layout_constraintBottom_toTopOf="@+id/cadastroComplemento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroEndereco" />
+
+    <Button
+        android:id="@+id/cadastroButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroEmail" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
