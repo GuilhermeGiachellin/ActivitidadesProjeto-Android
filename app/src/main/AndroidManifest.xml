@@ -12,6 +12,27 @@
         android:theme="@style/Theme.ActivitidadesProjeto"
         tools:targetApi="31">
         <activity
+            android:name=".erroCadastro"
+            android:exported="false" />
+        <activity
+            android:name=".sucessoCadastro"
+            android:exported="false" />
+        <activity
+            android:name=".sobre"
+            android:exported="false" />
+        <activity
+            android:name=".cadastro"
+            android:exported="false" />
+        <activity
+            android:name=".loginErro"
+            android:exported="false" />
+        <activity
+            android:name=".loginSucesso"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
