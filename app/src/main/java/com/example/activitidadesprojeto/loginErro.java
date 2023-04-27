@@ -2,6 +2,7 @@ package com.example.activitidadesprojeto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -14,6 +15,7 @@ public class loginErro extends AppCompatActivity {
     }
 
     public void botaoVoltarOnClick (View v) {
-
+        Intent telaLogin = new Intent(this, login.class);
+        startActivity(telaLogin);
     }
 }
