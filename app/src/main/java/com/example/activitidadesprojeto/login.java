@@ -29,12 +29,10 @@ public class login extends AppCompatActivity {
             startActivity(new Intent(this, loginErro.class));
 
         } else if (emailString.equals(emailCadastrado) && senhaString.equals(senhaCadastrada)) {
-            Intent telaSucessoLogin = new Intent(this, loginSucesso.class);
-            startActivity(telaSucessoLogin);
+            startActivity(new Intent(this, loginSucesso.class));
 
         } else {
-            Intent telaFalhaLogin = new Intent(this, loginErro.class);
-            startActivity(telaFalhaLogin);
+            startActivity(new Intent(this, loginErro.class));
         }
     }
 }

@@ -14,7 +14,7 @@ public class loginSucesso extends AppCompatActivity {
         setContentView(R.layout.activity_login_sucesso);
     }
 
-    public void sobreOnClick (View v) {        
+    public void sobreOnClick (View v) {
         startActivity(new Intent(this, sobre.class));
     }
 

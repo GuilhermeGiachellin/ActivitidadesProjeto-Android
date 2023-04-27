@@ -15,17 +15,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void botaoLoginOnClick(View v) {
-        Intent telaLogin = new Intent(this, login.class);
-        startActivity(telaLogin);
+        startActivity(new Intent(this, login.class));
     }
 
     public void botaoCadastroOnClick (View v) {
-        Intent telaCadastro = new Intent(this, cadastro.class);
-        startActivity(telaCadastro);
+        startActivity(new Intent(this, cadastro.class));
     }
 
     public void botaoSobreOnClick (View v) {
-        Intent telaSobre = new Intent(this, sobre.class);
-        startActivity(telaSobre);
+        startActivity(new Intent(this, sobre.class));
     }
 }

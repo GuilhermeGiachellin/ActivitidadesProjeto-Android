@@ -18,4 +18,8 @@ public class sobre extends AppCompatActivity {
     public void uniftecOnClick (View v) {
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.ftec.com.br")));
     }
+
+    public void voltarOnClick (View v) {
+        startActivity(new Intent(this, MainActivity.class));
+    }
 }
